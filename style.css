@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+/* - Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%) */
+
+*{
+    margin: 0px;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White:hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+    --FONT: "Figtree", sans-serif;
+}
+
+html, body{
+    background-color: var(--Yellow);
+}
+
+main{
+    width: 100vw;
+    height: 96vh;
+}
+
+#container{
+    min-width: 280px;
+    max-width: 530px;
+    position: absolute;
+    background-color: var(--White);
+    border: 2px solid var(--Gray950);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 15px;
+    font-family: var(--FONT);
+}
+
+#display_top{
+    display: block;
+    padding-left: 0px;
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+section{
+    margin: auto;
+    padding-left: 0px;
+}
+
+#learning{
+    background-color: var(--Yellow);
+    color: var(--Gray950);
+    font-weight: bold;
+    padding: 8px;
+    margin: 25px 0px 15px 0px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+aside{
+    padding: 5px 0px;
+}
+
+h1{
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+section > p{
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+#avatar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+#avatar > span {
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
